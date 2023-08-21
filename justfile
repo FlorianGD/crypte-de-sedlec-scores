@@ -6,8 +6,8 @@ compile-requirements:
 
 add PACKAGE:
     @echo {{PACKAGE}} >> requirements.in
-    : compile-requirements
-    : install
+    just --justfile {{justfile()}} compile-requirements
+    just --justfile {{justfile()}} install
 
 install-dev:
     pip install -Ur requirements-dev.txt 
