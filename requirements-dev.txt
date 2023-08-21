@@ -1,0 +1,6 @@
+pip-tools
+ruff
+pytest
+ipython
+pdbpp
+black
