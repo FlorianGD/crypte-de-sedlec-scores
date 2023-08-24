@@ -1,5 +1,5 @@
 run:
-    streamlit run sedlec/app.py
+    streamlit run sedlec/app/app.py
 
 compile-requirements:
     pip-compile requirements.in -o requirements.txt --no-emit-index-url --no-emit-find-links  --no-allow-unsafe --no-header --resolver=backtracking
